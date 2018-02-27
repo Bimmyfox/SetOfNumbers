@@ -1,0 +1,1809 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DEFECTS>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+      <FILENAME>setofnumbers.h</FILENAME>
+      <LINE>85</LINE>
+      <COLUMN>18</COLUMN>
+    </SFA>
+    <DEFECTCODE>6386</DEFECTCODE>
+    <DESCRIPTION>Переполнение буфера при записи в "setOfNumbers":  доступный для записи объем равен "numberElements*sizeof(int)" байт, однако записать можно только "8" байт.</DESCRIPTION>
+    <FUNCTION>SetOfNumbers::{ctor}</FUNCTION>
+    <DECORATED>??0SetOfNumbers@@QAE@AAV0@@Z</DECORATED>
+    <FUNCLINE>81</FUNCLINE>
+    <PROBABILITY>1</PROBABILITY>
+    <RANK>4</RANK>
+    <CATEGORY>
+      <RULECATEGORY>mspft</RULECATEGORY>
+    </CATEGORY>
+    <PATH>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>82</LINE>
+        <COLUMN>16</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>83</LINE>
+        <COLUMN>14</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>84</LINE>
+        <COLUMN>10</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>84</LINE>
+        <COLUMN>19</COLUMN>
+        <KEYEVENT>
+          <ID>1</ID>
+          <KIND>ветвь</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Войти в этот цикл (предполагается "i&lt;numberElements")</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>85</LINE>
+        <COLUMN>18</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>84</LINE>
+        <COLUMN>38</COLUMN>
+        <KEYEVENT>
+          <ID>2</ID>
+          <KIND>объявление</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>"i" может быть равно 1</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>84</LINE>
+        <COLUMN>19</COLUMN>
+        <KEYEVENT>
+          <ID>3</ID>
+          <KIND>ветвь</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Продолжить этот цикл (предполагается "i&lt;numberElements")</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>85</LINE>
+        <COLUMN>18</COLUMN>
+        <KEYEVENT>
+          <ID>4</ID>
+          <KIND>использование</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>Недопустимая операция записи в "setOfNumbers" (за пределами доступного для записи диапазона)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+    </PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+      <FILENAME>setofnumbers.h</FILENAME>
+      <LINE>85</LINE>
+      <COLUMN>18</COLUMN>
+    </SFA>
+    <DEFECTCODE>6011</DEFECTCODE>
+    <DESCRIPTION>Разыменование пустого указателя "setOfNumbers". </DESCRIPTION>
+    <FUNCTION>SetOfNumbers::{ctor}</FUNCTION>
+    <DECORATED>??0SetOfNumbers@@QAE@AAV0@@Z</DECORATED>
+    <FUNCLINE>81</FUNCLINE>
+    <PROBABILITY>1</PROBABILITY>
+    <RANK>4</RANK>
+    <CATEGORY>
+      <RULECATEGORY>mspft</RULECATEGORY>
+    </CATEGORY>
+    <PATH>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>82</LINE>
+        <COLUMN>16</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>83</LINE>
+        <COLUMN>14</COLUMN>
+        <KEYEVENT>
+          <ID>1</ID>
+          <KIND>объявление</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>"setOfNumbers" может быть равно NULL</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>84</LINE>
+        <COLUMN>10</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>84</LINE>
+        <COLUMN>19</COLUMN>
+        <KEYEVENT>
+          <ID>2</ID>
+          <KIND>ветвь</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Войти в этот цикл (предполагается "i&lt;numberElements")</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>85</LINE>
+        <COLUMN>18</COLUMN>
+        <KEYEVENT>
+          <ID>3</ID>
+          <KIND>использование</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>"setOfNumbers" разыменовано, но, возможно, по-прежнему равно NULL</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+    </PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+      <FILENAME>setofnumbers.h</FILENAME>
+      <LINE>117</LINE>
+      <COLUMN>18</COLUMN>
+    </SFA>
+    <DEFECTCODE>6386</DEFECTCODE>
+    <DESCRIPTION>Переполнение буфера при записи в "setOfNumbers":  доступный для записи объем равен "numberElements*sizeof(int)" байт, однако записать можно только "8" байт.</DESCRIPTION>
+    <FUNCTION>SetOfNumbers::setSetOfNumbers</FUNCTION>
+    <DECORATED>?setSetOfNumbers@SetOfNumbers@@QAEXAAV1@@Z</DECORATED>
+    <FUNCLINE>112</FUNCLINE>
+    <PROBABILITY>1</PROBABILITY>
+    <RANK>4</RANK>
+    <CATEGORY>
+      <RULECATEGORY>mspft</RULECATEGORY>
+    </CATEGORY>
+    <PATH>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>113</LINE>
+        <COLUMN>16</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>114</LINE>
+        <COLUMN>14</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>116</LINE>
+        <COLUMN>10</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>116</LINE>
+        <COLUMN>19</COLUMN>
+        <KEYEVENT>
+          <ID>1</ID>
+          <KIND>ветвь</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Войти в этот цикл (предполагается "i&lt;numberElements")</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>117</LINE>
+        <COLUMN>18</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>116</LINE>
+        <COLUMN>38</COLUMN>
+        <KEYEVENT>
+          <ID>2</ID>
+          <KIND>объявление</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>"i" может быть равно 1</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>116</LINE>
+        <COLUMN>19</COLUMN>
+        <KEYEVENT>
+          <ID>3</ID>
+          <KIND>ветвь</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Продолжить этот цикл (предполагается "i&lt;numberElements")</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>117</LINE>
+        <COLUMN>18</COLUMN>
+        <KEYEVENT>
+          <ID>4</ID>
+          <KIND>использование</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>Недопустимая операция записи в "setOfNumbers" (за пределами доступного для записи диапазона)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+    </PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+      <FILENAME>setofnumbers.h</FILENAME>
+      <LINE>117</LINE>
+      <COLUMN>18</COLUMN>
+    </SFA>
+    <DEFECTCODE>6011</DEFECTCODE>
+    <DESCRIPTION>Разыменование пустого указателя "setOfNumbers". </DESCRIPTION>
+    <FUNCTION>SetOfNumbers::setSetOfNumbers</FUNCTION>
+    <DECORATED>?setSetOfNumbers@SetOfNumbers@@QAEXAAV1@@Z</DECORATED>
+    <FUNCLINE>112</FUNCLINE>
+    <PROBABILITY>1</PROBABILITY>
+    <RANK>4</RANK>
+    <CATEGORY>
+      <RULECATEGORY>mspft</RULECATEGORY>
+    </CATEGORY>
+    <PATH>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>113</LINE>
+        <COLUMN>16</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>114</LINE>
+        <COLUMN>14</COLUMN>
+        <KEYEVENT>
+          <ID>1</ID>
+          <KIND>объявление</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>"setOfNumbers" может быть равно NULL</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>116</LINE>
+        <COLUMN>10</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>116</LINE>
+        <COLUMN>19</COLUMN>
+        <KEYEVENT>
+          <ID>2</ID>
+          <KIND>ветвь</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Войти в этот цикл (предполагается "i&lt;numberElements")</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>117</LINE>
+        <COLUMN>18</COLUMN>
+        <KEYEVENT>
+          <ID>3</ID>
+          <KIND>использование</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>"setOfNumbers" разыменовано, но, возможно, по-прежнему равно NULL</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+    </PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+      <FILENAME>setofnumbers.h</FILENAME>
+      <LINE>129</LINE>
+      <COLUMN>18</COLUMN>
+    </SFA>
+    <DEFECTCODE>6386</DEFECTCODE>
+    <DESCRIPTION>Переполнение буфера при записи в "setOfNumbers":  доступный для записи объем равен "numberElements*sizeof(int)" байт, однако записать можно только "8" байт.</DESCRIPTION>
+    <FUNCTION>SetOfNumbers::setSetOfNumbers</FUNCTION>
+    <DECORATED>?setSetOfNumbers@SetOfNumbers@@QAEXPAHH@Z</DECORATED>
+    <FUNCLINE>125</FUNCLINE>
+    <PROBABILITY>1</PROBABILITY>
+    <RANK>4</RANK>
+    <CATEGORY>
+      <RULECATEGORY>mspft</RULECATEGORY>
+    </CATEGORY>
+    <PATH>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>126</LINE>
+        <COLUMN>16</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>127</LINE>
+        <COLUMN>14</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>128</LINE>
+        <COLUMN>10</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>128</LINE>
+        <COLUMN>19</COLUMN>
+        <KEYEVENT>
+          <ID>1</ID>
+          <KIND>ветвь</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Войти в этот цикл (предполагается "i&lt;numberElements")</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>129</LINE>
+        <COLUMN>18</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>128</LINE>
+        <COLUMN>38</COLUMN>
+        <KEYEVENT>
+          <ID>2</ID>
+          <KIND>объявление</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>"i" может быть равно 1</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>128</LINE>
+        <COLUMN>19</COLUMN>
+        <KEYEVENT>
+          <ID>3</ID>
+          <KIND>ветвь</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Продолжить этот цикл (предполагается "i&lt;numberElements")</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>129</LINE>
+        <COLUMN>18</COLUMN>
+        <KEYEVENT>
+          <ID>4</ID>
+          <KIND>использование</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>Недопустимая операция записи в "setOfNumbers" (за пределами доступного для записи диапазона)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+    </PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+      <FILENAME>setofnumbers.h</FILENAME>
+      <LINE>129</LINE>
+      <COLUMN>18</COLUMN>
+    </SFA>
+    <DEFECTCODE>6011</DEFECTCODE>
+    <DESCRIPTION>Разыменование пустого указателя "setOfNumbers". </DESCRIPTION>
+    <FUNCTION>SetOfNumbers::setSetOfNumbers</FUNCTION>
+    <DECORATED>?setSetOfNumbers@SetOfNumbers@@QAEXPAHH@Z</DECORATED>
+    <FUNCLINE>125</FUNCLINE>
+    <PROBABILITY>1</PROBABILITY>
+    <RANK>4</RANK>
+    <CATEGORY>
+      <RULECATEGORY>mspft</RULECATEGORY>
+    </CATEGORY>
+    <PATH>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>126</LINE>
+        <COLUMN>16</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>127</LINE>
+        <COLUMN>14</COLUMN>
+        <KEYEVENT>
+          <ID>1</ID>
+          <KIND>объявление</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>"setOfNumbers" может быть равно NULL</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>128</LINE>
+        <COLUMN>10</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>128</LINE>
+        <COLUMN>19</COLUMN>
+        <KEYEVENT>
+          <ID>2</ID>
+          <KIND>ветвь</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Войти в этот цикл (предполагается "i&lt;numberElements")</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>129</LINE>
+        <COLUMN>18</COLUMN>
+        <KEYEVENT>
+          <ID>3</ID>
+          <KIND>использование</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>"setOfNumbers" разыменовано, но, возможно, по-прежнему равно NULL</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+    </PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+      <FILENAME>setofnumbers.h</FILENAME>
+      <LINE>231</LINE>
+      <COLUMN>29</COLUMN>
+    </SFA>
+    <DEFECTCODE>6308</DEFECTCODE>
+    <DESCRIPTION>realloc может возвратить пустой указатель: присвоение пустого указателя переменной "setOfNumbers", которая передается в качестве аргумента функции realloc, приведет к утечке исходного блока памяти.</DESCRIPTION>
+    <FUNCTION>SetOfNumbers::unionMas</FUNCTION>
+    <DECORATED>?unionMas@SetOfNumbers@@QAEXAAV1@@Z</DECORATED>
+    <FUNCLINE>173</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+      <FILENAME>setofnumbers.h</FILENAME>
+      <LINE>213</LINE>
+      <COLUMN>45</COLUMN>
+    </SFA>
+    <DEFECTCODE>6386</DEFECTCODE>
+    <DESCRIPTION>Переполнение буфера при записи в "arrayTmp":  доступный для записи объем равен "size*sizeof(int)" байт, однако записать можно только "8" байт.</DESCRIPTION>
+    <FUNCTION>SetOfNumbers::unionMas</FUNCTION>
+    <DECORATED>?unionMas@SetOfNumbers@@QAEXAAV1@@Z</DECORATED>
+    <FUNCLINE>173</FUNCLINE>
+    <PROBABILITY>1</PROBABILITY>
+    <RANK>4</RANK>
+    <CATEGORY>
+      <RULECATEGORY>mspft</RULECATEGORY>
+    </CATEGORY>
+    <PATH>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>174</LINE>
+        <COLUMN>6</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>175</LINE>
+        <COLUMN>5</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>176</LINE>
+        <COLUMN>5</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>177</LINE>
+        <COLUMN>5</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>180</LINE>
+        <COLUMN>5</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>181</LINE>
+        <COLUMN>15</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>182</LINE>
+        <COLUMN>10</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>182</LINE>
+        <COLUMN>19</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>187</LINE>
+        <COLUMN>5</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>188</LINE>
+        <COLUMN>6</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>189</LINE>
+        <COLUMN>10</COLUMN>
+        <KEYEVENT>
+          <ID>1</ID>
+          <KIND>объявление</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>"arrayTmp" является массивом размером 0 байт</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>191</LINE>
+        <COLUMN>21</COLUMN>
+        <KEYEVENT>
+          <ID>2</ID>
+          <KIND>ветвь</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Пропустить эту ветвь (предполагается, что "numberElements2&gt;numberElements" равно false)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>196</LINE>
+        <COLUMN>4</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>197</LINE>
+        <COLUMN>4</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>198</LINE>
+        <COLUMN>4</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>201</LINE>
+        <COLUMN>5</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>203</LINE>
+        <COLUMN>6</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>206</LINE>
+        <COLUMN>10</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>206</LINE>
+        <COLUMN>19</COLUMN>
+        <KEYEVENT>
+          <ID>3</ID>
+          <KIND>ветвь</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Войти в этот цикл (предполагается "i&lt;a")</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>207</LINE>
+        <COLUMN>11</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>207</LINE>
+        <COLUMN>20</COLUMN>
+        <KEYEVENT>
+          <ID>4</ID>
+          <KIND>ветвь</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Пропустить этот цикл (предполагается, что "j&gt;i" равно false)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>213</LINE>
+        <COLUMN>6</COLUMN>
+        <KEYEVENT>
+          <ID>5</ID>
+          <KIND>ветвь</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Войти в эту ветвь (предполагается "!flag")</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>213</LINE>
+        <COLUMN>45</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>214</LINE>
+        <COLUMN>7</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>206</LINE>
+        <COLUMN>25</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>206</LINE>
+        <COLUMN>19</COLUMN>
+        <KEYEVENT>
+          <ID>6</ID>
+          <KIND>ветвь</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Продолжить этот цикл (предполагается "i&lt;a")</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>207</LINE>
+        <COLUMN>11</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>207</LINE>
+        <COLUMN>20</COLUMN>
+        <KEYEVENT>
+          <ID>7</ID>
+          <KIND>ветвь</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Пропустить этот цикл (предполагается, что "j&gt;i" равно false)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>213</LINE>
+        <COLUMN>6</COLUMN>
+        <KEYEVENT>
+          <ID>8</ID>
+          <KIND>ветвь</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Войти в эту ветвь (предполагается "!flag")</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>213</LINE>
+        <COLUMN>45</COLUMN>
+        <KEYEVENT>
+          <ID>9</ID>
+          <KIND>использование</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>Недопустимая операция записи в "arrayTmp" (за пределами доступного для записи диапазона)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+    </PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+      <FILENAME>setofnumbers.h</FILENAME>
+      <LINE>236</LINE>
+      <COLUMN>18</COLUMN>
+    </SFA>
+    <DEFECTCODE>28182</DEFECTCODE>
+    <DESCRIPTION>Разыменование пустого (NULL) указателя. "setOfNumbers" содержит то же значение NULL, которое находилось в "realloc()`231". </DESCRIPTION>
+    <FUNCTION>SetOfNumbers::unionMas</FUNCTION>
+    <DECORATED>?unionMas@SetOfNumbers@@QAEXAAV1@@Z</DECORATED>
+    <FUNCLINE>173</FUNCLINE>
+    <PROBABILITY>1</PROBABILITY>
+    <RANK>3</RANK>
+    <CATEGORY>
+      <RULECATEGORY>mspft</RULECATEGORY>
+    </CATEGORY>
+    <PATH>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>174</LINE>
+        <COLUMN>6</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>175</LINE>
+        <COLUMN>5</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>176</LINE>
+        <COLUMN>5</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>177</LINE>
+        <COLUMN>5</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>180</LINE>
+        <COLUMN>5</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>181</LINE>
+        <COLUMN>15</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>182</LINE>
+        <COLUMN>10</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>182</LINE>
+        <COLUMN>19</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>187</LINE>
+        <COLUMN>5</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>188</LINE>
+        <COLUMN>6</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>189</LINE>
+        <COLUMN>10</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>191</LINE>
+        <COLUMN>21</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>196</LINE>
+        <COLUMN>4</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>197</LINE>
+        <COLUMN>4</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>198</LINE>
+        <COLUMN>4</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>201</LINE>
+        <COLUMN>5</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>203</LINE>
+        <COLUMN>6</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>206</LINE>
+        <COLUMN>10</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>206</LINE>
+        <COLUMN>19</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>218</LINE>
+        <COLUMN>10</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>218</LINE>
+        <COLUMN>19</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>228</LINE>
+        <COLUMN>16</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>231</LINE>
+        <COLUMN>14</COLUMN>
+        <KEYEVENT>
+          <ID>1</ID>
+          <KIND>объявление</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>"setOfNumbers" может быть равно NULL</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>235</LINE>
+        <COLUMN>10</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>235</LINE>
+        <COLUMN>19</COLUMN>
+        <KEYEVENT>
+          <ID>2</ID>
+          <KIND>ветвь</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Войти в этот цикл (предполагается "i&lt;numberElements")</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>236</LINE>
+        <COLUMN>18</COLUMN>
+        <KEYEVENT>
+          <ID>3</ID>
+          <KIND>использование</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>"setOfNumbers" разыменовано, но, возможно, по-прежнему равно NULL</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+    </PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+      <FILENAME>setofnumbers.h</FILENAME>
+      <LINE>236</LINE>
+      <COLUMN>18</COLUMN>
+    </SFA>
+    <DEFECTCODE>6385</DEFECTCODE>
+    <DESCRIPTION>Чтение недопустимых данных из "arrayTmp":  доступный для чтения объем равен "size*sizeof(int)" байт, однако считать можно только "8" байт.</DESCRIPTION>
+    <FUNCTION>SetOfNumbers::unionMas</FUNCTION>
+    <DECORATED>?unionMas@SetOfNumbers@@QAEXAAV1@@Z</DECORATED>
+    <FUNCLINE>173</FUNCLINE>
+    <PROBABILITY>1</PROBABILITY>
+    <RANK>4</RANK>
+    <CATEGORY>
+      <RULECATEGORY>mspft</RULECATEGORY>
+    </CATEGORY>
+    <PATH>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>174</LINE>
+        <COLUMN>6</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>175</LINE>
+        <COLUMN>5</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>176</LINE>
+        <COLUMN>5</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>177</LINE>
+        <COLUMN>5</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>180</LINE>
+        <COLUMN>5</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>181</LINE>
+        <COLUMN>15</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>182</LINE>
+        <COLUMN>10</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>182</LINE>
+        <COLUMN>19</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>187</LINE>
+        <COLUMN>5</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>188</LINE>
+        <COLUMN>6</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>189</LINE>
+        <COLUMN>10</COLUMN>
+        <KEYEVENT>
+          <ID>1</ID>
+          <KIND>объявление</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>"arrayTmp" является массивом размером 0 байт</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>191</LINE>
+        <COLUMN>21</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>196</LINE>
+        <COLUMN>4</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>197</LINE>
+        <COLUMN>4</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>198</LINE>
+        <COLUMN>4</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>201</LINE>
+        <COLUMN>5</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>203</LINE>
+        <COLUMN>6</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>206</LINE>
+        <COLUMN>10</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>206</LINE>
+        <COLUMN>19</COLUMN>
+        <KEYEVENT>
+          <ID>2</ID>
+          <KIND>ветвь</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Пропустить этот цикл (предполагается, что "i&lt;a" равно false)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>218</LINE>
+        <COLUMN>10</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>218</LINE>
+        <COLUMN>19</COLUMN>
+        <KEYEVENT>
+          <ID>3</ID>
+          <KIND>ветвь</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Пропустить этот цикл (предполагается, что "i&lt;numberElements2" равно false)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>228</LINE>
+        <COLUMN>16</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>231</LINE>
+        <COLUMN>14</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>235</LINE>
+        <COLUMN>10</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>235</LINE>
+        <COLUMN>19</COLUMN>
+        <KEYEVENT>
+          <ID>4</ID>
+          <KIND>ветвь</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Войти в этот цикл (предполагается "i&lt;numberElements")</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>236</LINE>
+        <COLUMN>18</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>235</LINE>
+        <COLUMN>38</COLUMN>
+        <KEYEVENT>
+          <ID>5</ID>
+          <KIND>объявление</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>"i" может быть равно 1</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>235</LINE>
+        <COLUMN>19</COLUMN>
+        <KEYEVENT>
+          <ID>6</ID>
+          <KIND>ветвь</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Продолжить этот цикл (предполагается "i&lt;numberElements")</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>236</LINE>
+        <COLUMN>18</COLUMN>
+        <KEYEVENT>
+          <ID>7</ID>
+          <KIND>использование</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>Недопустимая операция чтения из "arrayTmp" (за пределами доступного для чтения диапазона)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+    </PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+      <FILENAME>setofnumbers.h</FILENAME>
+      <LINE>236</LINE>
+      <COLUMN>18</COLUMN>
+    </SFA>
+    <DEFECTCODE>6386</DEFECTCODE>
+    <DESCRIPTION>Переполнение буфера при записи в "setOfNumbers":  доступный для записи объем равен "numberElements*sizeof(int)" байт, однако записать можно только "8" байт.</DESCRIPTION>
+    <FUNCTION>SetOfNumbers::unionMas</FUNCTION>
+    <DECORATED>?unionMas@SetOfNumbers@@QAEXAAV1@@Z</DECORATED>
+    <FUNCLINE>173</FUNCLINE>
+    <PROBABILITY>1</PROBABILITY>
+    <RANK>4</RANK>
+    <CATEGORY>
+      <RULECATEGORY>mspft</RULECATEGORY>
+    </CATEGORY>
+    <PATH>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>174</LINE>
+        <COLUMN>6</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>175</LINE>
+        <COLUMN>5</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>176</LINE>
+        <COLUMN>5</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>177</LINE>
+        <COLUMN>5</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>180</LINE>
+        <COLUMN>5</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>181</LINE>
+        <COLUMN>15</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>182</LINE>
+        <COLUMN>10</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>182</LINE>
+        <COLUMN>19</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>187</LINE>
+        <COLUMN>5</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>188</LINE>
+        <COLUMN>6</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>189</LINE>
+        <COLUMN>10</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>191</LINE>
+        <COLUMN>21</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>196</LINE>
+        <COLUMN>4</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>197</LINE>
+        <COLUMN>4</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>198</LINE>
+        <COLUMN>4</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>201</LINE>
+        <COLUMN>5</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>203</LINE>
+        <COLUMN>6</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>206</LINE>
+        <COLUMN>10</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>206</LINE>
+        <COLUMN>19</COLUMN>
+        <KEYEVENT>
+          <ID>1</ID>
+          <KIND>ветвь</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Пропустить этот цикл (предполагается, что "i&lt;a" равно false)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>218</LINE>
+        <COLUMN>10</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>218</LINE>
+        <COLUMN>19</COLUMN>
+        <KEYEVENT>
+          <ID>2</ID>
+          <KIND>ветвь</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Пропустить этот цикл (предполагается, что "i&lt;numberElements2" равно false)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>228</LINE>
+        <COLUMN>16</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>231</LINE>
+        <COLUMN>14</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>235</LINE>
+        <COLUMN>10</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>235</LINE>
+        <COLUMN>19</COLUMN>
+        <KEYEVENT>
+          <ID>3</ID>
+          <KIND>ветвь</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Войти в этот цикл (предполагается "i&lt;numberElements")</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>236</LINE>
+        <COLUMN>18</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>235</LINE>
+        <COLUMN>38</COLUMN>
+        <KEYEVENT>
+          <ID>4</ID>
+          <KIND>объявление</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>"i" может быть равно 1</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>235</LINE>
+        <COLUMN>19</COLUMN>
+        <KEYEVENT>
+          <ID>5</ID>
+          <KIND>ветвь</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Продолжить этот цикл (предполагается "i&lt;numberElements")</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>236</LINE>
+        <COLUMN>18</COLUMN>
+        <KEYEVENT>
+          <ID>6</ID>
+          <KIND>использование</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>Недопустимая операция записи в "setOfNumbers" (за пределами доступного для записи диапазона)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+    </PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+      <FILENAME>setofnumbers.h</FILENAME>
+      <LINE>236</LINE>
+      <COLUMN>18</COLUMN>
+    </SFA>
+    <DEFECTCODE>6011</DEFECTCODE>
+    <DESCRIPTION>Разыменование пустого указателя "arrayTmp". </DESCRIPTION>
+    <FUNCTION>SetOfNumbers::unionMas</FUNCTION>
+    <DECORATED>?unionMas@SetOfNumbers@@QAEXAAV1@@Z</DECORATED>
+    <FUNCLINE>173</FUNCLINE>
+    <PROBABILITY>1</PROBABILITY>
+    <RANK>4</RANK>
+    <CATEGORY>
+      <RULECATEGORY>mspft</RULECATEGORY>
+    </CATEGORY>
+    <PATH>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>174</LINE>
+        <COLUMN>6</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>175</LINE>
+        <COLUMN>5</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>176</LINE>
+        <COLUMN>5</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>177</LINE>
+        <COLUMN>5</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>180</LINE>
+        <COLUMN>5</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>181</LINE>
+        <COLUMN>15</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>182</LINE>
+        <COLUMN>10</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>182</LINE>
+        <COLUMN>19</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>187</LINE>
+        <COLUMN>5</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>188</LINE>
+        <COLUMN>6</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>189</LINE>
+        <COLUMN>10</COLUMN>
+        <KEYEVENT>
+          <ID>1</ID>
+          <KIND>объявление</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>"arrayTmp" может быть равно NULL</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>191</LINE>
+        <COLUMN>21</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>196</LINE>
+        <COLUMN>4</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>197</LINE>
+        <COLUMN>4</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>198</LINE>
+        <COLUMN>4</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>201</LINE>
+        <COLUMN>5</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>203</LINE>
+        <COLUMN>6</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>206</LINE>
+        <COLUMN>10</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>206</LINE>
+        <COLUMN>19</COLUMN>
+        <KEYEVENT>
+          <ID>2</ID>
+          <KIND>ветвь</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Пропустить этот цикл (предполагается, что "i&lt;a" равно false)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>218</LINE>
+        <COLUMN>10</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>218</LINE>
+        <COLUMN>19</COLUMN>
+        <KEYEVENT>
+          <ID>3</ID>
+          <KIND>ветвь</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Пропустить этот цикл (предполагается, что "i&lt;numberElements2" равно false)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>228</LINE>
+        <COLUMN>16</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>231</LINE>
+        <COLUMN>14</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>235</LINE>
+        <COLUMN>10</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>235</LINE>
+        <COLUMN>19</COLUMN>
+        <KEYEVENT>
+          <ID>4</ID>
+          <KIND>ветвь</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Войти в этот цикл (предполагается "i&lt;numberElements")</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>236</LINE>
+        <COLUMN>18</COLUMN>
+        <KEYEVENT>
+          <ID>5</ID>
+          <KIND>использование</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>"arrayTmp" разыменовано, но, возможно, по-прежнему равно NULL</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+    </PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+      <FILENAME>setofnumbers.h</FILENAME>
+      <LINE>278</LINE>
+      <COLUMN>19</COLUMN>
+    </SFA>
+    <DEFECTCODE>6386</DEFECTCODE>
+    <DESCRIPTION>Переполнение буфера при записи в "setOfNumbers2":  доступный для записи объем равен "numberElements2*sizeof(int)" байт, однако записать можно только "8" байт.</DESCRIPTION>
+    <FUNCTION>SetOfNumbers::chekSubset</FUNCTION>
+    <DECORATED>?chekSubset@SetOfNumbers@@QAE_NAAV1@@Z</DECORATED>
+    <FUNCLINE>268</FUNCLINE>
+    <PROBABILITY>1</PROBABILITY>
+    <RANK>4</RANK>
+    <CATEGORY>
+      <RULECATEGORY>mspft</RULECATEGORY>
+    </CATEGORY>
+    <PATH>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>270</LINE>
+        <COLUMN>5</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>272</LINE>
+        <COLUMN>5</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>276</LINE>
+        <COLUMN>5</COLUMN>
+        <KEYEVENT>
+          <ID>1</ID>
+          <KIND>объявление</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>"setOfNumbers2" является массивом размером 0 байт</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>277</LINE>
+        <COLUMN>10</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>277</LINE>
+        <COLUMN>19</COLUMN>
+        <KEYEVENT>
+          <ID>2</ID>
+          <KIND>ветвь</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Войти в этот цикл (предполагается "i&lt;numberElements2")</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>278</LINE>
+        <COLUMN>19</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>277</LINE>
+        <COLUMN>39</COLUMN>
+        <KEYEVENT>
+          <ID>3</ID>
+          <KIND>объявление</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>"i" может быть равно 1</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>277</LINE>
+        <COLUMN>19</COLUMN>
+        <KEYEVENT>
+          <ID>4</ID>
+          <KIND>ветвь</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Продолжить этот цикл (предполагается "i&lt;numberElements2")</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>278</LINE>
+        <COLUMN>19</COLUMN>
+        <KEYEVENT>
+          <ID>5</ID>
+          <KIND>использование</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>Недопустимая операция записи в "setOfNumbers2" (за пределами доступного для записи диапазона)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+    </PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+      <FILENAME>setofnumbers.h</FILENAME>
+      <LINE>278</LINE>
+      <COLUMN>19</COLUMN>
+    </SFA>
+    <DEFECTCODE>6011</DEFECTCODE>
+    <DESCRIPTION>Разыменование пустого указателя "setOfNumbers2". </DESCRIPTION>
+    <FUNCTION>SetOfNumbers::chekSubset</FUNCTION>
+    <DECORATED>?chekSubset@SetOfNumbers@@QAE_NAAV1@@Z</DECORATED>
+    <FUNCLINE>268</FUNCLINE>
+    <PROBABILITY>1</PROBABILITY>
+    <RANK>4</RANK>
+    <CATEGORY>
+      <RULECATEGORY>mspft</RULECATEGORY>
+    </CATEGORY>
+    <PATH>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>270</LINE>
+        <COLUMN>5</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>272</LINE>
+        <COLUMN>5</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>276</LINE>
+        <COLUMN>5</COLUMN>
+        <KEYEVENT>
+          <ID>1</ID>
+          <KIND>объявление</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>"setOfNumbers2" может быть равно NULL</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>277</LINE>
+        <COLUMN>10</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>277</LINE>
+        <COLUMN>19</COLUMN>
+        <KEYEVENT>
+          <ID>2</ID>
+          <KIND>ветвь</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Войти в этот цикл (предполагается "i&lt;numberElements2")</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+        <FILENAME>setofnumbers.h</FILENAME>
+        <LINE>278</LINE>
+        <COLUMN>19</COLUMN>
+        <KEYEVENT>
+          <ID>3</ID>
+          <KIND>использование</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>"setOfNumbers2" разыменовано, но, возможно, по-прежнему равно NULL</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+    </PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>d:\документы\visual studio 2017\projects\practicle\practicle\</FILEPATH>
+      <FILENAME>setofnumbers.cpp</FILENAME>
+      <LINE>50</LINE>
+      <COLUMN>7</COLUMN>
+    </SFA>
+    <DEFECTCODE>6031</DEFECTCODE>
+    <DESCRIPTION>Возвращаемое значение пропущено: "_getch".</DESCRIPTION>
+    <FUNCTION>main</FUNCTION>
+    <DECORATED>main</DECORATED>
+    <FUNCLINE>14</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+</DEFECTS>
